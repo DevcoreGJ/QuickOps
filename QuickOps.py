@@ -63,3 +63,17 @@ class ListMerge:
 
         return merged_list.next
 
+class Positive_Integer:
+    def __init__(self, num):
+        self.num = num
+
+    def pivot(self):
+        total_sum = sum(range(1, self.num+1))
+        partial_sum = 0
+        for i in range(self.num, 0, -1):
+            partial_sum += i
+            if total_sum == partial_sum:
+                return i
+        return -1
+
+

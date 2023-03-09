@@ -1,4 +1,4 @@
-from QuickOps import ListOperator, StringOperator, ListStringOperator, ListNode, ListMerge
+from QuickOps import ListOperator, StringOperator, ListStringOperator, ListNode, ListMerge, Positive_Integer
 
 # return the indices that add up to a target variable or dictionary list entry. 
 my_list = [1, 3, 4, 2, 6, 7, 5]
@@ -25,3 +25,11 @@ current_node = merged_head
 while current_node:
     print(current_node.val)
     current_node = current_node.next
+
+# This will create a Positive_Integer instance
+# with a value of 10, then call its pivot method
+# to find the pivot integer.
+
+my_num = Positive_Integer(10)
+pivot_num = my_num.pivot()
+print(pivot_num)
